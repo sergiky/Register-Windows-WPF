@@ -1,0 +1,4 @@
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\Component-MaskedTextBox\obj\Debug\Component-MaskedTextBox.csproj.AssemblyReference.cache
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\Component-MaskedTextBox\obj\Debug\MaskedTextBox.g.cs
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\Component-MaskedTextBox\obj\Debug\Component-MaskedTextBox_MarkupCompile.cache
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\Component-MaskedTextBox\obj\Debug\Component-MaskedTextBox_MarkupCompile.lref

@@ -1,0 +1,498 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DI_UT2_Practica2._2_Diseno_de_formulario"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:LibraryStateCheckbox="clr-namespace:LibraryStateCheckbox;assembly=LibraryStateCheckbox" x:Class="DI_UT2_Practica2._2_Diseno_de_formulario.MainWindow"
+        mc:Ignorable="d"
+        Title="2.2 | Diseño de usabilidad" Height="786" Width="866"
+        
+        
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        MouseDown="Window_MouseDown"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        AllowsTransparency="True" Loaded="Window_Loaded">
+
+    <Border CornerRadius="11">
+        <Border.Background>
+            <ImageBrush ImageSource="/res/Images/gp-background.png" Stretch="UniformToFill"/>
+        </Border.Background>
+        <Border CornerRadius="10" BorderThickness="3" Opacity="0.93">
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#462AD8" Offset="0"/>
+                    <GradientStop Color="#DA34AE" Offset="0.75"/>
+                    <GradientStop Color="#8A16C1" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                    <GradientStop Color="#060531" Offset="0"/>
+                    <GradientStop Color="#1B1448" Offset="0.90"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="28"/>
+                        <ColumnDefinition Width="28"/>
+                        <ColumnDefinition Width="5"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock 
+                        x:Name="txb_title_bar_name"
+                        Text="Partner register" 
+                        Foreground="DarkGray" 
+                        FontSize="15" 
+                        FontFamily="Roboto" 
+                        Grid.Column="0"
+                        VerticalAlignment="Center"
+                        Margin="10,0,0,0"/>
+
+                    <Button x:Name="btnMinimize"
+                            BorderThickness="0"
+                            Content="-"
+                            Foreground="White"
+                            FontSize="16"
+                            FontFamily="Roboto"
+                            Cursor="Hand"
+                            Grid.Column="1"
+                            Click="btnMinimize_Click">
+
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Background" Value="#28AEED"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#278BEF"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Width="23" Height="23"
+                                        CornerRadius="13"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+
+                    </Button>
+
+                    <Button x:Name="btnClose"
+                            BorderThickness="0"
+                            Content="x"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Roboto"
+                            Cursor="Hand"
+                            Grid.Column="2"
+                            Click="btnClose_Click">
+
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Background" Value="#DA34AE"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#C62DAE"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Width="23" Height="23"
+                                        CornerRadius="13"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+
+                    </Button>
+
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid x:Name="gridStacks" Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0" Margin="125,0,15,20">
+                            <StackPanel Orientation="Horizontal">
+                                <Label 
+                                x:Name="lblNIF"
+                                Content="NIF"
+                                Style="{StaticResource lblGeneralFormat}"
+                                Margin="0,15,0,0"/>
+
+                                <Label
+                                    x:Name="lblNIFerror"
+                                    Style="{StaticResource lblGeneralError}"
+                                    Content="lblNIFError"
+                                    VerticalAlignment="Center"/>
+                            </StackPanel>
+
+
+
+                            <TextBox
+                                x:Name="txbNIF"
+                                Style="{StaticResource onlyLineEnd}" LostFocus="txbNIF_LostFocus" GotFocus="txbNIF_GotFocus" KeyUp="txbNIF_KeyUp"/>
+
+                            <StackPanel Orientation="Horizontal">
+                                <Label 
+                                    x:Name="lblName"
+                                    Content="Name"
+                                    Style="{StaticResource lblGeneralFormat}"
+                                    Margin="0,25,0,0"/>
+
+                                <Label
+                                    x:Name="lblNameError"
+                                    Style="{StaticResource lblGeneralError}"
+                                    Content="lblNameError"
+                                    VerticalAlignment="Center"/>
+                            </StackPanel>
+
+                            <TextBox
+                                x:Name="txbName"
+                                Style="{StaticResource onlyLineEnd}" GotFocus="txbName_GotFocus" LostFocus="txbName_LostFocus" KeyDown="txbName_KeyDown" KeyUp="txbName_KeyUp"/>
+
+                            <StackPanel Orientation="Horizontal">
+                                <Label 
+                                x:Name="lblSurname"
+                                Content="Surname"
+                                Style="{StaticResource lblGeneralFormat}"
+                                Margin="0,25,0,0"/>
+
+                                <Label
+                                    x:Name="lblSurnameError"
+                                    Style="{StaticResource lblGeneralError}"
+                                    Content="lblSurnameerror"
+                                    VerticalAlignment="Center"/>
+                            </StackPanel>
+
+                            <TextBox
+                                x:Name="txbSurname"
+                                Style="{StaticResource onlyLineEnd}" GotFocus="txbSurname_GotFocus" LostFocus="txbSurname_LostFocus" KeyDown="txbSurname_KeyDown" KeyUp="txbSurname_KeyUp"/>
+
+                            <StackPanel Orientation="Horizontal">
+                                <Label 
+                                x:Name="lblDateBirth"
+                                Content="Date of birth"
+                                Style="{StaticResource lblGeneralFormat}"
+                                Margin="0,25,0,0"/>
+
+                                <Label
+                                    x:Name="lblDateBirthError"
+                                    Style="{StaticResource lblGeneralError}"
+                                    Content="lblDateBirthError"
+                                    VerticalAlignment="Center"/>
+                            </StackPanel>
+
+                            <DatePicker 
+                                x:Name="dtpBirthDate"
+                                Margin="0,5,0,0"
+                                DisplayDateEnd="{x:Static sys:DateTime.Now}" KeyDown="dtpBirthDate_KeyDown" CalendarOpened="dtpBirthDate_CalendarOpened"
+                                DisplayDateStart="01/01/1900" KeyUp="dtpBirthDate_KeyUp">
+
+                                <DatePicker.Resources>
+                                    <Style TargetType="{x:Type DatePickerTextBox}">
+                                        <Setter Property="Background" Value="Transparent"/>
+                                        <Setter Property="BorderThickness" Value="0"/>
+                                        <Setter Property="BorderBrush" Value="Transparent"/>
+                                        <Setter Property="Foreground" Value="White"/>
+                                    </Style>
+                                </DatePicker.Resources>
+
+                            </DatePicker>
+
+
+                            <Label 
+                                x:Name="lblAddress"
+                                Content="Address"
+                                Style="{StaticResource lblGeneralFormat}"
+                                Margin="0,22,0,0"/>
+                            <TextBox
+                                x:Name="txbAddress"
+                                Style="{StaticResource onlyLineEnd}" GotFocus="txbAddress_GotFocus" LostFocus="txbAddress_LostFocus"/>
+
+
+
+                            <Button x:Name="btnAceptar"
+                            BorderThickness="0"
+                            Content="Accept"
+                            Foreground="White"
+                            FontSize="15"
+                            FontFamily="Roboto"
+                            Cursor="Hand"
+                            Grid.Column="2"
+                            Margin="0,30,0,0"
+                            HorizontalAlignment="Right"
+                            Click="btnAceptar_Click">
+
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Background" Value="#DA34AE"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="#E04FB7"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+
+                                <Button.Template>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Width="100" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                            <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+
+                            </Button>
+
+
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1" Margin="15,0,125,20">
+                            <StackPanel Orientation="Horizontal">
+                                <Label 
+                                x:Name="lblPhoneNumber"
+                                Content="Phone Number"
+                                Style="{StaticResource lblGeneralFormat}"
+                                Margin="0,15,0,0"/>
+                                <Label
+                                    x:Name="lblPhoneNumberError"
+                                    Style="{StaticResource lblGeneralError}"
+                                    Content="lblPhoneNumberError"
+                                    VerticalAlignment="Center"/>
+                            </StackPanel>
+
+                            <TextBox
+                                     x:Name="txbPhoneNumber"
+                                    HorizontalAlignment="Stretch"
+                                     Style="{StaticResource onlyLineEnd}" GotFocus="txbPhoneNumber_GotFocus" LostFocus="txbPhoneNumber_LostFocus" KeyUp="txbPhoneNumber_KeyUp"/>
+
+                            <StackPanel Orientation="Horizontal">
+                                <Label 
+                                x:Name="lblEmail"
+                                Content="Email"
+                                Style="{StaticResource lblGeneralFormat}"
+                                Margin="0,25,0,0"/>
+                                <Label
+                                    x:Name="lblEmailError"
+                                    Style="{StaticResource lblGeneralError}"
+                                    Content="lblEmailError"
+                                    VerticalAlignment="Center"/>
+                            </StackPanel>
+
+                            <TextBox
+                                x:Name="txbEmail"
+                                Style="{StaticResource onlyLineEnd}" GotFocus="txbEmail_GotFocus" LostFocus="txbEmail_LostFocus" KeyUp="txbEmail_KeyUp"/>
+
+
+                            <StackPanel Orientation="Horizontal">
+                                <Label 
+                                    x:Name="lblState"
+                                    Content="State"
+                                    Margin="0,25,0,0"
+                                    Style="{StaticResource lblGeneralFormat}"/>
+
+                                <Label
+                                    x:Name="lblStateError"
+                                    Style="{StaticResource lblGeneralError}"
+                                    Content="lblStateerror"
+                                    VerticalAlignment="Center"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <CheckBox x:Name="chkState" HorizontalAlignment="left" Click="chkState_Click">
+                                    <CheckBox.Style>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="CheckBox">
+                                                        <Grid>
+                                                            <ContentPresenter/>
+                                                        </Grid>
+                                                        <ControlTemplate.Triggers>
+                                                            <Trigger Property="IsChecked" Value="True">
+                                                                <Setter Property="Content">
+                                                                    <Setter.Value>
+                                                                        <Image Source="/res/images/like.png" Width="40"/>
+                                                                    </Setter.Value>
+                                                                </Setter>
+                                                            </Trigger>
+                                                            <Trigger Property="IsChecked" Value="False">
+                                                                <Setter Property="Content">
+                                                                    <Setter.Value>
+                                                                        <Image Source="/res/images/dislike.png" Width="40"/>
+                                                                    </Setter.Value>
+                                                                </Setter>
+                                                            </Trigger>
+                                                        </ControlTemplate.Triggers>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </CheckBox.Style>
+                                </CheckBox>
+                                <Label 
+                                    x:Name="lblSateStatus"
+                                    Style="{StaticResource lblGeneralFormat}"
+                                    Content="Inactive"
+                                    Foreground="White"
+                                    FontSize="14"
+                                    VerticalAlignment="Center" MouseLeftButtonDown="lblSateStatus_MouseLeftButtonDown"/>
+                            </StackPanel>
+                            
+                            
+
+                            <StackPanel Orientation="Horizontal">
+                                <Label 
+                                    x:Name="lblLevel"
+                                    Content="Level"
+                                    Style="{StaticResource lblGeneralFormat}"
+                                    Margin="0,16,0,0"/>
+                                <Label
+                                    x:Name="lblLevelError"
+                                    Style="{StaticResource lblGeneralError}"
+                                    Content="lblLevelerror"
+                                    VerticalAlignment="Center"/>
+                            </StackPanel>
+
+                            <ComboBox x:Name="cmbLevel" Margin="0,5,0,0" Height="24" Style="{StaticResource StyleComboBox}" DropDownClosed="cmbLevel_DropDownClosed">
+                                <ComboBoxItem>Choose an option...</ComboBoxItem>
+                                <ComboBoxItem>Initialization</ComboBoxItem>
+                                <ComboBoxItem>Elementary</ComboBoxItem>
+                                <ComboBoxItem>Basic</ComboBoxItem>
+                                <ComboBoxItem>Intermediate</ComboBoxItem>
+                                <ComboBoxItem>Advanced</ComboBoxItem>
+                                <ComboBoxItem>Expert</ComboBoxItem>
+
+                            </ComboBox>
+
+                            <StackPanel Orientation="Horizontal">
+                                <Label 
+                                x:Name="lblComments"
+                                Content="Comments"
+                                Style="{StaticResource lblGeneralFormat}"
+                                Margin="0,25,0,0"/>
+                                <Label
+                                    x:Name="lblCommentsError"
+                                    Style="{StaticResource lblGeneralError}"
+                                    Content="lblLevelerror"
+                                    VerticalAlignment="Center"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <TextBox
+                                     x:Name="txbComments"
+                                     MaxLength="30"
+                                     MaxLines="1"
+                                     AcceptsReturn="False"
+                                    Width="250"
+                                     Style="{StaticResource onlyLineEnd}" GotFocus="txbComments_GotFocus" LostFocus="txbComments_LostFocus" KeyUp="txbComments_KeyUp"/>
+                                <Button 
+                                    x:Name="btnWriteMore" 
+                                    Style="{StaticResource MoreWrite}"
+                                    Margin="15,0,0,0"
+                                    VerticalAlignment="Bottom" MouseEnter="btnWriteMore_MouseEnter" MouseLeave="btnWriteMore_MouseLeave" Click="btnWriteMore_Click">
+                                    
+                                    <Image x:Name="imgPencil" Source="/res/Images/pencil_purple.png" Width="20" Height="20" RenderTransformOrigin="0.501,0.5"/>
+
+                                </Button>
+                            </StackPanel>
+                            
+                           
+
+
+
+                            <Button x:Name="btnCancelar"
+                            BorderThickness="0"
+                            Content="Cancel"
+                            Foreground="White"
+                            FontSize="15"
+                            FontFamily="Roboto"
+                            Cursor="Hand"
+                            Grid.Column="2"
+                            Margin="0,30,0,0"
+                            HorizontalAlignment="Left"
+                            Click="btnCancelar_Click">
+
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Background" Value="#462AD8"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="#7C61FF"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+
+                                <Button.Template>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Width="100" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                            <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+
+                            </Button>
+
+
+                        </StackPanel>
+
+                    </Grid>
+
+                    <StackPanel Grid.Row="0" Orientation="Vertical" Margin="0,35,0,0">
+                        <Image Source="/res/Images/partner.png" Height="100" Width="100"/>
+                        <TextBlock
+                        x:Name="txb_main_title"
+                        Text="Partner Register IES GP"
+                        Foreground="White"
+                        FontFamily="Roboto"
+                        FontSize="25"
+                        HorizontalAlignment="Center"
+                        Margin="0,10,0,0"/>
+                    </StackPanel>
+
+                </Grid>
+
+            </Grid>
+
+        </Border>
+    </Border>
+
+
+</Window>

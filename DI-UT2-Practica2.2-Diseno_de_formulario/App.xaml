@@ -1,0 +1,17 @@
+﻿<Application x:Class="DI_UT2_Practica2._2_Diseno_de_formulario.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DI_UT2_Practica2._2_Diseno_de_formulario"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/LibraryCustomDesigns;component/TextBoxDictionary.xaml"/>
+                <ResourceDictionary Source="/LibraryCustomDesigns;component/LabelGeneralFormatDictionary.xaml"/>
+                <ResourceDictionary Source="/LibraryCustomDesigns;component/LabelGeneralErrorFormatDictionary.xaml"/>
+                <ResourceDictionary Source="/LibraryCustomDesigns;component/ComboBoxDictionary.xaml"/>
+                <ResourceDictionary Source="/LibraryCustomDesigns;component/ButtonMoreWriteDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
