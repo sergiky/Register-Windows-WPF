@@ -1,0 +1,15 @@
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomDesigns\bin\Debug\LibraryCustomDesigns.dll
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomDesigns\bin\Debug\LibraryCustomDesigns.pdb
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomDesigns\obj\Debug\LibraryCustomDesigns.csproj.AssemblyReference.cache
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomDesigns\obj\Debug\ButtonMoreWriteDictionary.baml
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomDesigns\obj\Debug\ComboBoxDictionary.baml
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomDesigns\obj\Debug\LabelGeneralErrorFormatDictionary.baml
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomDesigns\obj\Debug\LabelGeneralFormatDictionary.baml
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomDesigns\obj\Debug\TextBoxDictionary.baml
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomDesigns\obj\Debug\LibraryCustomDesigns_MarkupCompile.cache
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomDesigns\obj\Debug\LibraryCustomDesigns.g.resources
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomDesigns\obj\Debug\LibraryCustomDesigns.Properties.Resources.resources
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomDesigns\obj\Debug\LibraryCustomDesigns.csproj.GenerateResource.cache
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomDesigns\obj\Debug\LibraryCustomDesigns.csproj.CoreCompileInputs.cache
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomDesigns\obj\Debug\LibraryCustomDesigns.dll
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomDesigns\obj\Debug\LibraryCustomDesigns.pdb

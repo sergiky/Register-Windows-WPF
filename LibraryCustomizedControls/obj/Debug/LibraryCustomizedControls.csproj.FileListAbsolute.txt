@@ -1,0 +1,6 @@
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomizedControls\bin\Debug\LibraryCustomizedControls.dll
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomizedControls\bin\Debug\LibraryCustomizedControls.pdb
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomizedControls\obj\Debug\LibraryCustomizedControls.csproj.AssemblyReference.cache
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomizedControls\obj\Debug\LibraryCustomizedControls.csproj.CoreCompileInputs.cache
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomizedControls\obj\Debug\LibraryCustomizedControls.dll
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryCustomizedControls\obj\Debug\LibraryCustomizedControls.pdb

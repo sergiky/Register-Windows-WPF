@@ -1,0 +1,13 @@
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryStateCheckbox\bin\Debug\LibraryStateCheckbox.dll
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryStateCheckbox\bin\Debug\LibraryStateCheckbox.pdb
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryStateCheckbox\obj\Debug\LibraryStateCheckbox.csproj.AssemblyReference.cache
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryStateCheckbox\obj\Debug\StateCheckbox.g.cs
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryStateCheckbox\obj\Debug\LibraryStateCheckbox_MarkupCompile.cache
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryStateCheckbox\obj\Debug\LibraryStateCheckbox_MarkupCompile.lref
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryStateCheckbox\obj\Debug\StateCheckbox.baml
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryStateCheckbox\obj\Debug\LibraryStateCheckbox.g.resources
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryStateCheckbox\obj\Debug\LibraryStateCheckbox.Properties.Resources.resources
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryStateCheckbox\obj\Debug\LibraryStateCheckbox.csproj.GenerateResource.cache
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryStateCheckbox\obj\Debug\LibraryStateCheckbox.csproj.CoreCompileInputs.cache
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryStateCheckbox\obj\Debug\LibraryStateCheckbox.dll
+D:\DAM\2 DAM\Desarrollo de interfaces (DI)\T1\Proyectos\DI-UT2-Practica2.2-Diseno_de_formulario\LibraryStateCheckbox\obj\Debug\LibraryStateCheckbox.pdb
